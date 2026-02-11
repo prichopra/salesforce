@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",   // optional, helps with imports
+    "paths": {
+      "*": ["*"]
+    },
+    "strict": true,
+    "outDir": "dist"
+  },
+  "include": ["src"]
+}
