@@ -3,7 +3,7 @@ export const LeadLocators = {
     leadsTab: '//one-app-nav-bar-item-root//a[@title="Leads"]', // reliable Lightning tab selector
 
     // New Lead button
-    newLeadButton: '//button[@name="New"]',
+    newLeadButton: '//div[@title="New"]',
     displayAsBtn: 'button[title^="Display as"], button.slds-button_icon-more',
 
     pipelineTable: 'table[role="grid"]',
@@ -53,4 +53,5 @@ export const LeadLocators = {
     inlineEditBtn: 'button.slds-cell-edit__button',
     statusOption: (status: string) => `lightning-base-combobox-item >> text="${status}"`,
     dropdownOption: (status: string) => `lightning-base-combobox-item:has-text("${status}")`,
+
 };

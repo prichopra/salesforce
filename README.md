@@ -1,50 +1,59 @@
+This README is tailored specifically to your Salesforce CRM automation project, focusing on the Lead-to-Opportunity conversion flow and the technical architecture we've finalized.
+
 Salesforce CRM Test Automation
-This project is a high-performance automation framework designed for Salesforce CRM, specifically focusing on the Lead Conversion Flow using Playwright. It leverages a Page Object Model (POM) architecture to ensure scalability and maintainability, separating business logic from technical locators.
+A robust, End-to-End (E2E) automation suite built with Playwright and TypeScript to validate critical Salesforce business flows. This project utilizes the Page Object Model (POM) and advanced network interception to handle the complexities of the Salesforce Lightning Experience (LWC).
 
-## Key Features
-Modular Architecture: Utilizes separate Page Objects and dedicated Locator files to minimize maintenance overhead.
+🚀 Key Features
+Session Persistence: Utilizes storageState to bypass repetitive login flows and maintain authenticated sessions.
 
-Intelligent Test Data Handling: Includes logic to detect available "Working" leads and gracefully skips tests if no suitable data is found, preventing false failures in CI/CD.
+Dynamic Lead Management: Implements smart logic to scan, sort, and pick unconverted leads dynamically from the CRM grid.
 
-Robust Salesforce Handling: Features custom wait strategies and "strict mode" resolution for complex Salesforce Lightning components like dynamic grids and modals.
+API Interception: Validates backend data integrity by intercepting XHR/POST requests during lead conversion to verify record creation at the database level.
 
-Session Persistence: Configured to use storageState.json to bypass repetitive login flows and improve execution speed.
+Shadow DOM Resilience: Employs advanced locators and JavaScript-level execution (evaluate) to reliably interact with Salesforce's deeply nested Lightning Web Components.
 
-## Project Structure
-src/pages/: Contains Page Object classes (e.g., convertLeadPage.ts) defining user actions.
+Deep Field Validation: Automates record verification by scrolling into dynamic sections (like Stage History) to validate lazy-loaded data such as "Amount" and "Owner."
 
-src/pages/locators/: Centralized locator files (e.g., convertLeadLocators.ts) for easy UI updates.
+🛠️ Tech Stack
+Framework: Playwright
 
-src/tests/: Test specifications (e.g., conversionLead.spec.ts) defining the test scenarios.
+Language: TypeScript
 
-src/config/: Environment and global configurations.
+Architecture: Page Object Model (POM)
 
-## Getting Started
-1. Prerequisites
-   Node.js (v16 or higher)
+Browsers: Chromium, Webkit
 
-Playwright CLI
+📁 Project Structure
+Plaintext
 
-2. Installation
-   Bash
-
-npm install
-npx playwright install
-3. Generating Session State
-   To skip the login process during test runs, generate your session state:
+├── src/
+│   ├── tests/               # E2E Test Specs (e.g., conversionLead.spec.ts)
+│   ├── pages/               # Page Object logic (LeadPage, ConvertLeadPage)
+│   ├── locators/            # Centralized locator constants
+│   └── config/              # Environment and global configurations
+├── test-results/            # Screenshots and videos for failed runs
+└── playwright.config.ts     # Framework configuration
+⚙️ Setup & Execution
+Install Dependencies:
 
 Bash
 
-npx playwright codegen --save-storage=storageState.json <your-salesforce-url>
-4. Running Tests
-   To run the lead conversion flow in headed mode:
+npm install
+Run Conversion Tests:
 
 Bash
 
 npx playwright test tests/conversionLead.spec.ts --headed --workers=1
-## Recent Fixes & Optimizations
-Modal Interception: Updated executeConversion to detect and handle active "Convert Lead" dialogs.
+Run Lead E2E Tests:
 
-Success Screen Handling: Added support for both "Go to Opportunity" and "Go to Leads" success screens to match different Salesforce Org configurations.
+Bash
 
-URL Stability: Refined getLeadId to wait for record-specific elements rather than relying solely on asynchronous URL changes.
+npx playwright test tests/lead.spec.ts --headed
+📝 Automation Best Practices Used
+Polling Clicks: Implemented retry logic for Salesforce path updates to ensure UI transitions are captured.
+
+Decoupled Locators: Strictly separated UI selectors from page logic for easier maintenance.
+
+Network Assertions: Uses waitForResponse to confirm Opportunity ID generation directly from the Salesforce backend API.
+
+Stability Buffers: Incorporates scrollIntoView and hydration timeouts to wait for LWC components to finish rendering.

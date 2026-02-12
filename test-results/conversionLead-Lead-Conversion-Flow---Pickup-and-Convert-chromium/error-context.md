@@ -1,0 +1,411 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "Skip to Navigation" [ref=e4] [cursor=pointer]:
+        - /url: javascript:void(0);
+      - link "Skip to Main Content" [ref=e5] [cursor=pointer]:
+        - /url: javascript:void(0);
+      - generic [ref=e6]:
+        - button "Search" [ref=e12]:
+          - img [ref=e14]
+          - text: Search...
+        - navigation "Global Header" [ref=e17]:
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - group [ref=e21]:
+                - button "Add favorite" [ref=e23] [cursor=pointer]:
+                  - generic [ref=e24]:
+                    - img [ref=e28]
+                    - tooltip "Add favorite"
+                - button "Favorites list" [ref=e32] [cursor=pointer]:
+                  - generic [ref=e33]:
+                    - img [ref=e37]
+                    - tooltip "Favorites list"
+            - listitem [ref=e40]:
+              - button "Global Actions" [ref=e46] [cursor=pointer]:
+                - generic [ref=e47]:
+                  - img [ref=e51]
+                  - tooltip "Global Actions"
+            - listitem [ref=e54]:
+              - button "Guidance Center" [ref=e56] [cursor=pointer]:
+                - generic [ref=e57]:
+                  - img [ref=e61]
+                  - tooltip "Guidance Center"
+            - listitem [ref=e64]:
+              - button "Salesforce Help" [ref=e67] [cursor=pointer]:
+                - generic [ref=e68]:
+                  - img [ref=e72]
+                  - tooltip "Salesforce Help"
+            - listitem [ref=e75]:
+              - button "Setup" [ref=e81] [cursor=pointer]:
+                - generic [ref=e82]:
+                  - img [ref=e86]
+                  - tooltip "Setup"
+            - listitem [ref=e89]:
+              - button "2 Notifications" [ref=e92] [cursor=pointer]:
+                - generic [ref=e93]:
+                  - generic [ref=e94]:
+                    - img [ref=e98]
+                    - generic [ref=e102]: "2"
+                  - tooltip "Notifications"
+              - generic [ref=e103]: 2 new notifications
+            - listitem [ref=e104]:
+              - button "View profile" [ref=e107] [cursor=pointer]:
+                - generic [ref=e108]:
+                  - tooltip "View profile"
+    - generic [ref=e112]:
+      - generic [ref=e115]:
+        - generic [ref=e117]:
+          - navigation "App" [ref=e118]:
+            - button "App Launcher" [ref=e120] [cursor=pointer]:
+              - generic [ref=e131]: App Launcher
+          - heading "Sales" [level=1] [ref=e132]:
+            - generic "Sales" [ref=e133]
+        - navigation "Global" [ref=e136]:
+          - list [ref=e137]:
+            - listitem [ref=e138]:
+              - link "Home" [ref=e139] [cursor=pointer]:
+                - /url: /lightning/page/home
+                - generic [ref=e140]: Home
+            - listitem [ref=e141] [cursor=pointer]:
+              - link "Opportunities" [ref=e142]:
+                - /url: /lightning/o/Opportunity/home
+                - generic [ref=e143]: Opportunities
+              - button "Opportunities List" [ref=e147]:
+                - img [ref=e151]
+                - generic [ref=e154]: Opportunities List
+            - listitem [ref=e155]:
+              - link "Leads" [ref=e156] [cursor=pointer]:
+                - /url: /lightning/o/Lead/home
+                - generic [ref=e157]: Leads
+              - button "Leads List" [ref=e161] [cursor=pointer]:
+                - img [ref=e165]
+                - generic [ref=e168]: Leads List
+            - listitem [ref=e169]:
+              - link "Tasks" [ref=e170] [cursor=pointer]:
+                - /url: /lightning/o/Task/home
+                - generic [ref=e171]: Tasks
+              - button "Tasks List" [ref=e175] [cursor=pointer]:
+                - img [ref=e179]
+                - generic [ref=e182]: Tasks List
+            - listitem [ref=e183]:
+              - link "Files" [ref=e184] [cursor=pointer]:
+                - /url: /lightning/o/ContentDocument/home
+                - generic [ref=e185]: Files
+              - button "Files List" [ref=e189] [cursor=pointer]:
+                - img [ref=e193]
+                - generic [ref=e196]: Files List
+            - listitem [ref=e197]:
+              - link "Accounts" [ref=e198] [cursor=pointer]:
+                - /url: /lightning/o/Account/home
+                - generic [ref=e199]: Accounts
+              - button "Accounts List" [ref=e203] [cursor=pointer]:
+                - img [ref=e207]
+                - generic [ref=e210]: Accounts List
+            - listitem [ref=e211]:
+              - link "Contacts" [ref=e212] [cursor=pointer]:
+                - /url: /lightning/o/Contact/home
+                - generic [ref=e213]: Contacts
+              - button "Contacts List" [ref=e217] [cursor=pointer]:
+                - img [ref=e221]
+                - generic [ref=e224]: Contacts List
+            - listitem [ref=e225]:
+              - link "Campaigns" [ref=e226] [cursor=pointer]:
+                - /url: /lightning/o/Campaign/home
+                - generic [ref=e227]: Campaigns
+              - button "Campaigns List" [ref=e231] [cursor=pointer]:
+                - img [ref=e235]
+                - generic [ref=e238]: Campaigns List
+            - listitem [ref=e239]:
+              - link "Dashboards" [ref=e240] [cursor=pointer]:
+                - /url: /lightning/o/Dashboard/home
+                - generic [ref=e241]: Dashboards
+              - button "Dashboards List" [ref=e245] [cursor=pointer]:
+                - img [ref=e249]
+                - generic [ref=e252]: Dashboards List
+            - listitem [ref=e253]:
+              - link "Reports" [ref=e254] [cursor=pointer]:
+                - /url: /lightning/o/Report/home
+                - generic [ref=e255]: Reports
+              - button "Reports List" [ref=e259] [cursor=pointer]:
+                - img [ref=e263]
+                - generic [ref=e266]: Reports List
+            - listitem [ref=e267]:
+              - button "Show more navigation items" [ref=e269] [cursor=pointer]:
+                - generic [ref=e270]: More
+                - img [ref=e274]
+                - generic [ref=e277]: Show more navigation items
+            - listitem [ref=e278]:
+              - button "Edit nav items" [ref=e280] [cursor=pointer]:
+                - img [ref=e282]
+                - generic [ref=e285]: Edit nav items
+      - main [ref=e287]:
+        - generic [ref=e303]:
+          - generic [ref=e312]:
+            - generic [ref=e313]:
+              - heading "Opportunity Singapore Public Service-" [level=1] [ref=e320]:
+                - generic [ref=e322]: Opportunity
+                - generic [ref=e323]: Singapore Public Service-
+              - button "Follow" [ref=e328] [cursor=pointer]:
+                - generic [ref=e329]:
+                  - img [ref=e333]
+                  - text: Follow
+              - generic [ref=e338]:
+                - generic "New Case" [ref=e339]:
+                  - button "New Case" [ref=e344] [cursor=pointer]
+                - generic "New Note" [ref=e345]:
+                  - button "New Note" [ref=e350] [cursor=pointer]
+                - generic "Clone" [ref=e351]:
+                  - button "Clone" [ref=e356] [cursor=pointer]
+                - button "Show more actions" [ref=e358] [cursor=pointer]:
+                  - img [ref=e360]
+                  - generic [ref=e363]: Show more actions
+            - generic [ref=e364]:
+              - generic [ref=e366]:
+                - paragraph [ref=e367]: Account Name
+                - paragraph [ref=e368]:
+                  - generic [ref=e373]:
+                    - link "Singapore Public Service" [ref=e374] [cursor=pointer]:
+                      - /url: /lightning/r/Account/001g500000Aq5WKAAZ/view
+                      - generic [ref=e378]: Singapore Public Service
+                    - button "Open Singapore Public Service Preview" [ref=e380] [cursor=pointer]:
+                      - img [ref=e382]
+                      - generic [ref=e385]: Open Singapore Public Service Preview
+              - generic [ref=e387]:
+                - paragraph [ref=e388]: Close Date
+                - paragraph [ref=e389]:
+                  - generic [ref=e390]: 3/31/2026
+              - generic [ref=e392]:
+                - paragraph [ref=e393]: Amount
+                - paragraph
+              - generic [ref=e395]:
+                - paragraph [ref=e396]: Opportunity Owner
+                - paragraph [ref=e397]:
+                  - generic [ref=e400]:
+                    - generic [ref=e407]:
+                      - link "Priyanka Chopra" [ref=e408] [cursor=pointer]:
+                        - /url: /lightning/r/User/005g5000003Tgn8AAC/view
+                        - generic [ref=e412]: Priyanka Chopra
+                      - button "Open Priyanka Chopra Preview" [ref=e414] [cursor=pointer]:
+                        - img [ref=e416]
+                        - generic [ref=e419]: Open Priyanka Chopra Preview
+                    - button "Change Owner" [ref=e421] [cursor=pointer]:
+                      - img [ref=e423]
+                      - generic [ref=e426]: Change Owner
+          - article [ref=e435]:
+            - generic [ref=e436]:
+              - heading "Path" [level=2] [ref=e437]
+              - generic [ref=e440]:
+                - listbox "Path Options" [ref=e445]:
+                  - option "Prospecting" [selected] [ref=e446] [cursor=pointer]:
+                    - generic [ref=e447]: Prospecting
+                  - option "Qualification" [ref=e448] [cursor=pointer]:
+                    - generic [ref=e449]: Qualification
+                  - option "Needs Analysis" [ref=e450] [cursor=pointer]:
+                    - generic [ref=e451]: Needs Analysis
+                  - option "Value Proposition" [ref=e452] [cursor=pointer]:
+                    - generic [ref=e453]: Value Proposition
+                  - option "Id. Decision Makers" [ref=e454] [cursor=pointer]:
+                    - generic [ref=e455]: Id. Decision Makers
+                  - option "Perception Analysis" [ref=e456] [cursor=pointer]:
+                    - generic [ref=e457]: Perception Analysis
+                  - option "Proposal/Price Quote" [ref=e458] [cursor=pointer]:
+                    - generic [ref=e459]: Proposal/Price Quote
+                  - option "Negotiation/Review" [ref=e460] [cursor=pointer]:
+                    - generic [ref=e461]: Negotiation/Review
+                  - option "Closed" [ref=e462] [cursor=pointer]:
+                    - generic [ref=e463]: Closed
+                - button "Mark Stage as Complete" [ref=e465] [cursor=pointer]:
+                  - img [ref=e469]
+                  - generic [ref=e472]: Mark Stage as Complete
+          - generic [ref=e473]:
+            - generic [ref=e479]:
+              - heading "Tabs" [level=2] [ref=e480]
+              - generic [ref=e482]:
+                - tablist "Tabs" [ref=e484]:
+                  - tab "Activity" [selected] [ref=e485] [cursor=pointer]
+                  - tab "Details" [ref=e486] [cursor=pointer]
+                  - tab "Chatter" [ref=e487] [cursor=pointer]
+                - tabpanel "Activity" [ref=e490]:
+                  - generic [ref=e496]:
+                    - heading "Activity Publisher" [level=2] [ref=e497]
+                    - generic [ref=e498]:
+                      - group [ref=e499]:
+                        - generic [ref=e501]:
+                          - button "New Task" [ref=e502] [cursor=pointer]:
+                            - generic [ref=e504]:
+                              - img [ref=e506]
+                              - generic [ref=e509]: New Task
+                            - generic [ref=e510]: New Task
+                          - generic [ref=e511]:
+                            - button "No Additional New Task Actions" [disabled]:
+                              - generic:
+                                - img
+                              - generic: No Additional New Task Actions
+                      - group [ref=e512]:
+                        - generic [ref=e514]:
+                          - button "Log a Call" [ref=e515] [cursor=pointer]:
+                            - generic [ref=e517]:
+                              - img [ref=e519]
+                              - generic [ref=e522]: Log a Call
+                            - generic [ref=e523]: Log a Call
+                          - button "More Log a Call Actions" [ref=e525] [cursor=pointer]:
+                            - img [ref=e527]
+                            - generic [ref=e530]: More Log a Call Actions
+                      - group [ref=e531]:
+                        - generic [ref=e533]:
+                          - button "New Event" [ref=e534] [cursor=pointer]:
+                            - generic [ref=e536]:
+                              - img [ref=e538]
+                              - generic [ref=e541]: New Event
+                            - generic [ref=e542]: New Event
+                          - button "More New Event Actions" [ref=e544] [cursor=pointer]:
+                            - img [ref=e546]
+                            - generic [ref=e549]: More New Event Actions
+                      - group [ref=e550]:
+                        - generic [ref=e552]:
+                          - button "Email" [ref=e553] [cursor=pointer]:
+                            - generic [ref=e555]:
+                              - img [ref=e557]
+                              - generic [ref=e560]: Email
+                            - generic [ref=e561]: Email
+                          - button "More Email Actions" [ref=e563] [cursor=pointer]:
+                            - img [ref=e565]
+                            - generic [ref=e568]: More Email Actions
+                    - heading "Activity Timeline" [level=2] [ref=e569]
+                    - generic [ref=e571]:
+                      - link "Skip to the bottom of the activity timeline" [ref=e572] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                      - generic [ref=e574]:
+                        - generic [ref=e576]: "Filters: All time • All activities • All types"
+                        - button "Timeline Settings" [ref=e577] [cursor=pointer]:
+                          - img [ref=e579]
+                          - generic [ref=e582]: Timeline Settings
+                      - generic [ref=e585]:
+                        - button "Refresh" [ref=e586] [cursor=pointer]
+                        - text: •
+                        - button "Expand All. Show details for activities in the timeline." [ref=e587] [cursor=pointer]: Expand All
+                        - text: •
+                        - button "View All" [ref=e588] [cursor=pointer]
+                      - generic [ref=e590]:
+                        - heading "Upcoming & Overdue" [level=3] [ref=e591]:
+                          - button "Upcoming & Overdue" [expanded] [ref=e592] [cursor=pointer]:
+                            - img [ref=e594]
+                            - text: Upcoming & Overdue
+                        - generic [ref=e597]:
+                          - generic:
+                            - list
+                          - generic [ref=e600]:
+                            - text: No activities to show.
+                            - text: Get started by sending an email, scheduling a task, and more.
+                      - status [ref=e601]:
+                        - generic [ref=e603]:
+                          - img [ref=e607]
+                          - generic [ref=e610]: information
+                        - paragraph [ref=e612]: To change what's shown, try changing your filters.
+                      - button "Show All Activities" [ref=e614] [cursor=pointer]
+                      - link "Skip to the top of the activity timeline" [ref=e615] [cursor=pointer]:
+                        - /url: javascript:void(0);
+            - generic [ref=e622]:
+              - heading "Tabs" [level=2] [ref=e623]
+              - generic [ref=e625]:
+                - tablist "Tabs" [ref=e627]:
+                  - tab "Related" [selected] [ref=e628] [cursor=pointer]
+                - tabpanel "Related" [ref=e631]:
+                  - generic [ref=e636]:
+                    - article "Products" [ref=e644]:
+                      - generic [ref=e645]:
+                        - heading "Products (0)" [level=2] [ref=e651]:
+                          - link "Products (0)" [ref=e652] [cursor=pointer]:
+                            - /url: /lightning/r/Opportunity/006g5000001cNO1AAM/related/OpportunityLineItems/view
+                            - generic "Products" [ref=e653]
+                            - generic "(0)" [ref=e654]
+                        - button "Show actions for Products" [ref=e658] [cursor=pointer]:
+                          - generic [ref=e660]:
+                            - img [ref=e662]
+                            - generic [ref=e665]: Show actions for Products
+                    - article "Notes & Attachments" [ref=e673]:
+                      - generic [ref=e674]:
+                        - heading "Notes & Attachments (0)" [level=2] [ref=e680]:
+                          - link "Notes & Attachments (0)" [ref=e681] [cursor=pointer]:
+                            - /url: /lightning/r/Opportunity/006g5000001cNO1AAM/related/CombinedAttachments/view
+                            - generic "Notes & Attachments" [ref=e682]
+                            - generic "(0)" [ref=e683]
+                        - button "Show actions for Notes & Attachments" [ref=e687] [cursor=pointer]:
+                          - generic [ref=e689]:
+                            - img [ref=e691]
+                            - generic [ref=e694]: Show actions for Notes & Attachments
+                      - generic [ref=e700]:
+                        - generic [ref=e702]:
+                          - img [ref=e706]
+                          - generic [ref=e709]: Drop Files
+                        - generic [ref=e710]:
+                          - generic [ref=e712]:
+                            - generic [ref=e716]:
+                              - button "Upload Files Or drop files" [ref=e717]
+                              - generic [ref=e718]:
+                                - generic [ref=e719]:
+                                  - img [ref=e721]
+                                  - text: Upload Files
+                                - generic [ref=e724]: Or drop files
+                            - status
+                          - list
+                    - article "Contact Roles" [ref=e732]:
+                      - generic [ref=e733]:
+                        - heading "Contact Roles (1)" [level=2] [ref=e739]:
+                          - link "Contact Roles (1)" [ref=e740] [cursor=pointer]:
+                            - /url: /lightning/r/Opportunity/006g5000001cNO1AAM/related/OpportunityContactRoles/view
+                            - generic "Contact Roles" [ref=e741]
+                            - generic "(1)" [ref=e742]
+                        - button "Show actions for Contact Roles" [ref=e746] [cursor=pointer]:
+                          - generic [ref=e748]:
+                            - img [ref=e750]
+                            - generic [ref=e753]: Show actions for Contact Roles
+                      - list [ref=e759]:
+                        - listitem [ref=e760]:
+                          - article [ref=e761]:
+                            - generic [ref=e762]:
+                              - generic [ref=e763]:
+                                - heading "QE_User_1770872598366 Candidate QE_User_1770872598366 Candidate primary" [level=3] [ref=e764]:
+                                  - generic [ref=e765]:
+                                    - generic [ref=e767]:
+                                      - img "QE_User_1770872598366 Candidate" [ref=e771]
+                                      - link "QE_User_1770872598366 Candidate" [ref=e772] [cursor=pointer]:
+                                        - /url: /lightning/r/003g5000007yUOzAAM/view
+                                    - generic [ref=e773]: primary
+                                - button "Show Actions" [ref=e775] [cursor=pointer]:
+                                  - generic [ref=e776]:
+                                    - generic [ref=e777]:
+                                      - img
+                                    - generic [ref=e778]: Show Actions
+                              - list [ref=e780]:
+                                - listitem [ref=e781]:
+                                  - link "Role:" [ref=e783]
+                                - listitem [ref=e784]:
+                                  - link "Title:" [ref=e786]
+                      - link "View All Contact Roles" [ref=e787] [cursor=pointer]:
+                        - /url: /lightning/r/Opportunity/006g5000001cNO1AAM/related/OpportunityContactRoles/view
+                        - generic [ref=e789]:
+                          - text: View All
+                          - generic [ref=e790]: Contact Roles
+                    - article [ref=e796]:
+                      - generic [ref=e797]:
+                        - img [ref=e799]
+                        - heading "Partners" [level=2] [ref=e800]
+                    - article [ref=e807]:
+                      - generic [ref=e808]:
+                        - img [ref=e810]
+                        - heading "Stage History" [level=2] [ref=e811]
+    - generic:
+      - contentinfo "Utility Bar":
+        - list [ref=e816]:
+          - listitem [ref=e817]:
+            - button "To Do List" [ref=e820] [cursor=pointer]:
+              - img [ref=e824]
+              - generic [ref=e827]: To Do List
+  - generic:
+    - status
+```
